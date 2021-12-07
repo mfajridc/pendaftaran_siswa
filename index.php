@@ -40,7 +40,7 @@
 <body>
 	<div class="position-relative h-100">	
 		<div class="position-absolute mid-center">
-		    <h1>SMK Coding</h1>
+		    <h2>Welcome to SMK Coding</h2>
             <a class="btn btn-primary btn-lg btn-block" href="form-daftar.php">Daftar Baru</a>
             <a class="btn btn-primary btn-lg btn-block" href="list-siswa.php">Pendaftar</a>
             <?php if(isset($_GET['status'])): ?>
