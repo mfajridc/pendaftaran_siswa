@@ -12,6 +12,15 @@ if(isset($_POST['daftar'])){
     $agama = $_POST['agama'];
     $sekolah = $_POST['sekolah_asal'];
 
+    $foto = $_FILES['foto']['name'];
+    $tmp = $_FILES['foto']['tmp_name'];
+
+    // Rename nama fotonya dengan menambahkan tanggal dan jam upload
+        $fotobaru = date('dmYHis').$foto;
+ 
+        // Set path folder tempat menyimpan fotonya
+        $path = "img/".$fotobaru;
+
     // buat query
     $sql = "INSERT INTO calon_siswa (nama, alamat, jenis_kelamin, agama, sekolah_asal) VALUE ('$nama', '$alamat', '$jk', '$agama', '$sekolah')";
     $query = mysqli_query($db, $sql);

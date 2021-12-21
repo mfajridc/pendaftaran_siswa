@@ -23,6 +23,10 @@
                 <input type="text" class="form-control" name="nama" placeholder="Nama lengkap"/>
             </div>
             <div class="form-group">
+            <label for="foto" class="form-label">Foto: </label>
+            <input type="file" name="foto" class="form-control" required placeholder="Foto" />
+            </div>
+            <div class="form-group">
                 <label for="alamat">Alamat: </label>
                 <textarea class="form-control" name="alamat"></textarea>
             </div>

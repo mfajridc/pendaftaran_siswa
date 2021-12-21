@@ -48,6 +48,11 @@ if( mysqli_num_rows($query) < 1 ){
                 <label for="nama">Nama: </label>
                 <input type="text" class="form-control" name="nama" placeholder="nama lengkap" value="<?php echo $siswa['nama'] ?>" />
             </div>
+            </div>
+            <div class="form-group">
+            <label for="foto" class="form-label">Foto: </label>
+            <input type="file" name="foto" class="form-control" required />
+            </div>
             <div class="form-group">
                 <label for="alamat">Alamat: </label>
                 <textarea class="form-control" name="alamat"><?php echo $siswa['alamat'] ?></textarea>

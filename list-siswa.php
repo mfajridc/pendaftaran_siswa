@@ -28,6 +28,7 @@
                 <tr>
                     <th scope="col">No</th>
                     <th scope="col">Nama</th>
+                    <th scope="col">Foto</th>
                     <th scope="col">Alamat</th>
                     <th scope="col">Jenis Kelamin</th>
                     <th scope="col">Agama</th>
@@ -43,12 +44,14 @@
                     echo "<tr>";
                     echo "<td>".$siswa['id']."</td>";
                     echo "<td>".$siswa['nama']."</td>";
+                    echo "<td><img src='img/".$siswa['foto']."' width='100' height='100'></td>";
                     echo "<td>".$siswa['alamat']."</td>";
                     echo "<td>".$siswa['jenis_kelamin']."</td>";
                     echo "<td>".$siswa['agama']."</td>";
                     echo "<td>".$siswa['sekolah_asal']."</td>";
                     echo "<td>";
-                    echo "<a href='form-edit.php?id=".$siswa['id']."'>  Edit</a>  ";
+                    echo "<a href='form-edit.php?id=".$siswa['id']."'>     Edit</a> | ";
+                    echo "<a href='hapus.php?id=".$siswa['id']."'>Hapus</a>";
                     echo "</td>";
                     echo "</tr>";
                 }

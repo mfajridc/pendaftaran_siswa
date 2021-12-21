@@ -7,6 +7,9 @@ if( isset($_GET['id']) ){
     // ambil id dari query string
     $id = $_GET['id'];
 
+    if (is_file("img/".$data['foto']))
+    unlink("img/".$data['foto']);
+
     // buat query hapus
     $sql = "DELETE FROM calon_siswa WHERE id=$id";
     $query = mysqli_query($db, $sql);
